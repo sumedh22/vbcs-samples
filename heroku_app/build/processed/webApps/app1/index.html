@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://static.oracle.com">
+  <link rel="preconnect" href="https://rt.oraclevb.com">
+  <link rel="stylesheet" href="https://static.oracle.com/cdn/jet/v8.1.0/default/css/alta/oj-alta-min.css" id="css" type="text/css"/>
+  <link type="text/css" rel="stylesheet" href="version_4652003105638323472/resources/css/app.css">
+</head>
+
+<body class="oj-web-applayout-body">
+
+<oj-vb-content config="[[vbApplication]]"></oj-vb-content>
+
+<noscript>
+  <div style="font-size: 18px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif; width: 80%; margin:20% auto;">
+    <p>We've detected that JavaScript is disabled in your browser. Visual Builder applications cannot run without JavaScript. Please enable JavaScript in your browser.</p>
+  </div>
+</noscript><script type="text/javascript">
+window.vbInitConfig = {
+JET_CDN_PATH: 'https://static.oracle.com/cdn/jet/',
+JET_CDN_VERSION: 'v8.1.0',
+DEBUG: false,
+CONTEXT_ROOT: '/ic/builder',
+APP_ID: 'heroku_app',
+APP_VERSION: '1.0',
+APP_URL_PREFIX: 'rt',
+IS_DT_MODE: false,
+IS_MOBILE: false,
+VB_SERVER: 'https://intoraic-vbdemo.integration.ocp.oraclecloud.com:443',
+APP_PATH: 'webApps/app1',
+TRACE_CONFIG: {},
+BASE_URL_TOKEN: 'version_4652003105638323472',
+}
+</script>
+<script type="text/javascript" src="https://static.oracle.com/cdn/jet/v8.1.0/3rdparty/require/require.js"></script>
+<script type="text/javascript" src="https://static.oracle.com/cdn/jet/v8.1.0/default/js/bundles-config.js"></script>
+<iframe id="vb-refresh-access-token-iframe" src="" style="visibility:hidden;display:none"></iframe>
+<script type="text/javascript" src="https://rt.oraclevb.com/release/19.4.3.9/lib/third-party-libs.js"></script>
+<script id="vbrt" type="text/javascript">
+  var nAgt = navigator.userAgent;      
+  var ie11 = (nAgt.indexOf('MSIE') !== -1 || !!nAgt.match(/Trident.*rv:11./)) ? '-ie11' : '';
+  var element = document.createElement('script');      
+  element.type = 'text/javascript';
+  element.src = 'https://rt.oraclevb.com/release/19.4.3.9/visual-runtime' + ie11 + '.js';
+  document.body.appendChild(element);
+</script>
+
+<link id="favicon-light" rel="icon" href="version_4652003105638323472/resources/images/favicon-light.ico" type="image/ico">
+<link id="favicon-dark" rel="icon" href="version_4652003105638323472/resources/images/favicon-dark.ico" type="image/ico">
+<script>
+  const lightIcon = document.getElementById('favicon-light');
+  const darkIcon = document.getElementById('favicon-dark');
+  const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function switchIcon() {
+    if (matcher.matches) {
+      darkIcon.remove();
+      document.head.append(lightIcon);
+    } else {
+      lightIcon.remove();
+      document.head.append(darkIcon);
+    }
+  }
+
+  matcher.addEventListener('change', switchIcon);
+  switchIcon();
+</script>
+</body>
+
+</html>

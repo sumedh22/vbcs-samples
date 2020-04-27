@@ -1,0 +1,47 @@
+{
+    "webApps/app1": {
+        "basePath": "/Users/sumedh/Documents/Personal/vbcs/heroku_app/build/optimized/webApps/app1/version_4652003105638323472",
+        "bundledResources": [
+            "app-flow.js",
+            "app-flow.json",
+            "flows/main/main-flow.js",
+            "flows/main/main-flow.json",
+            "flows/main/pages/main-start-page.html",
+            "flows/main/pages/main-start-page.js",
+            "flows/main/pages/main-start-page.json",
+            "pages/resources/strings/shell/nls/root/shell-strings.js",
+            "pages/resources/strings/shell/nls/shell-strings.js",
+            "pages/shell-page.html",
+            "pages/shell-page.js",
+            "pages/shell-page.json",
+            "private/custom/versions.json",
+            "resources/css/app.css",
+            "resources/strings/app/nls/app-strings.js",
+            "resources/strings/app/nls/root/app-strings.js",
+            "services/catalog.json",
+            "settings/dependencies.json"
+        ],
+        "pathsToResources": {
+            "bundles/vb-app-bundle": {
+                "app-flow": "app-flow.js",
+                "text!app-flow.json": "app-flow.json",
+                "flows/main/main-flow": "flows/main/main-flow.js",
+                "text!flows/main/main-flow.json": "flows/main/main-flow.json",
+                "text!flows/main/pages/main-start-page.html": "flows/main/pages/main-start-page.html",
+                "flows/main/pages/main-start-page": "flows/main/pages/main-start-page.js",
+                "text!flows/main/pages/main-start-page.json": "flows/main/pages/main-start-page.json",
+                "pages/resources/strings/shell/nls/root/shell-strings": "pages/resources/strings/shell/nls/root/shell-strings.js",
+                "pages/resources/strings/shell/nls/shell-strings": "pages/resources/strings/shell/nls/shell-strings.js",
+                "text!pages/shell-page.html": "pages/shell-page.html",
+                "pages/shell-page": "pages/shell-page.js",
+                "text!pages/shell-page.json": "pages/shell-page.json",
+                "text!private/custom/versions.json": "private/custom/versions.json",
+                "css!resources/css/app": "resources/css/app.css",
+                "resources/strings/app/nls/app-strings": "resources/strings/app/nls/app-strings.js",
+                "resources/strings/app/nls/root/app-strings": "resources/strings/app/nls/root/app-strings.js",
+                "text!services/catalog.json": "services/catalog.json",
+                "text!settings/dependencies.json": "settings/dependencies.json"
+            }
+        }
+    }
+}

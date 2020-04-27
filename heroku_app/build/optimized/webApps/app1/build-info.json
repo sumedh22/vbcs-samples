@@ -1,0 +1,87 @@
+{
+    "resources": [
+        "index.html",
+        "version_4652003105638323472/app-flow.js",
+        "version_4652003105638323472/app-flow.json",
+        "version_4652003105638323472/bundles/vb-app-bundle.js",
+        "version_4652003105638323472/bundles/vb-app-bundle.js.map",
+        "version_4652003105638323472/flows/main/main-flow.js",
+        "version_4652003105638323472/flows/main/main-flow.json",
+        "version_4652003105638323472/flows/main/pages/main-start-page.html",
+        "version_4652003105638323472/flows/main/pages/main-start-page.js",
+        "version_4652003105638323472/flows/main/pages/main-start-page.json",
+        "version_4652003105638323472/pages/resources/strings/shell/nls/root/shell-strings.js",
+        "version_4652003105638323472/pages/resources/strings/shell/nls/shell-strings.js",
+        "version_4652003105638323472/pages/shell-page.html",
+        "version_4652003105638323472/pages/shell-page.js",
+        "version_4652003105638323472/pages/shell-page.json",
+        "version_4652003105638323472/private/custom/versions.json",
+        "version_4652003105638323472/resources/css/app.css",
+        "version_4652003105638323472/resources/images/favicon-dark.ico",
+        "version_4652003105638323472/resources/images/favicon-light.ico",
+        "version_4652003105638323472/resources/strings/app/nls/app-strings.js",
+        "version_4652003105638323472/resources/strings/app/nls/root/app-strings.js",
+        "version_4652003105638323472/services/catalog.json",
+        "version_4652003105638323472/settings/dependencies.json",
+        "build-info.json"
+    ],
+    "extendableResources": [],
+    "bundles": {
+        "bundles/vb-app-bundle": [
+            "app-flow",
+            "text!app-flow.json",
+            "flows/main/main-flow",
+            "text!flows/main/main-flow.json",
+            "text!flows/main/pages/main-start-page.html",
+            "flows/main/pages/main-start-page",
+            "text!flows/main/pages/main-start-page.json",
+            "pages/resources/strings/shell/nls/root/shell-strings",
+            "pages/resources/strings/shell/nls/shell-strings",
+            "text!pages/shell-page.html",
+            "pages/shell-page",
+            "text!pages/shell-page.json",
+            "text!private/custom/versions.json",
+            "css!resources/css/app",
+            "resources/strings/app/nls/app-strings",
+            "resources/strings/app/nls/root/app-strings",
+            "text!services/catalog.json",
+            "text!settings/dependencies.json"
+        ]
+    },
+    "versionHash": "version_4652003105638323472",
+    "version-info": {
+        "jet": {
+            "url": "https://static.oracle.com/cdn/jet/",
+            "version": "8.1.0"
+        },
+        "vb": {
+            "url": "https://rt.oraclevb.com/release/",
+            "version": "19.4.3.9"
+        }
+    },
+    "applicationType": "web",
+    "bundles-extra": {
+        "pathsToResources": {
+            "bundles/vb-app-bundle": {
+                "app-flow": "app-flow.js",
+                "text!app-flow.json": "app-flow.json",
+                "flows/main/main-flow": "flows/main/main-flow.js",
+                "text!flows/main/main-flow.json": "flows/main/main-flow.json",
+                "text!flows/main/pages/main-start-page.html": "flows/main/pages/main-start-page.html",
+                "flows/main/pages/main-start-page": "flows/main/pages/main-start-page.js",
+                "text!flows/main/pages/main-start-page.json": "flows/main/pages/main-start-page.json",
+                "pages/resources/strings/shell/nls/root/shell-strings": "pages/resources/strings/shell/nls/root/shell-strings.js",
+                "pages/resources/strings/shell/nls/shell-strings": "pages/resources/strings/shell/nls/shell-strings.js",
+                "text!pages/shell-page.html": "pages/shell-page.html",
+                "pages/shell-page": "pages/shell-page.js",
+                "text!pages/shell-page.json": "pages/shell-page.json",
+                "text!private/custom/versions.json": "private/custom/versions.json",
+                "css!resources/css/app": "resources/css/app.css",
+                "resources/strings/app/nls/app-strings": "resources/strings/app/nls/app-strings.js",
+                "resources/strings/app/nls/root/app-strings": "resources/strings/app/nls/root/app-strings.js",
+                "text!services/catalog.json": "services/catalog.json",
+                "text!settings/dependencies.json": "settings/dependencies.json"
+            }
+        }
+    }
+}

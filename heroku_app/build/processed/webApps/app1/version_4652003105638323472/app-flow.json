@@ -1,0 +1,86 @@
+{
+    "defaultPage": "shell",
+    "types": {
+    },
+    "variables": {
+    },
+    "chains": {
+        "resourceChangedHandler": {
+            "variables": {
+                "event": {
+                    "input": "fromCaller",
+                    "type": {
+                        "error": {
+                            "detail": "string"
+                        }
+                    },
+                    "required": false
+                }
+            },
+            "root": "fireNotification1",
+            "description": "Displays a notification message when application has been updated and needs to be refreshed.",
+            "actions": {
+                "fireNotification1": {
+                    "module": "vb/action/builtin/fireNotificationEventAction",
+                    "parameters": {
+                        "summary": "[[ $chain.variables.event.error.detail ]]",
+                        "target": "leaf"
+                    }
+                }
+            }
+        }
+    },
+    "configuration": {
+        "profile": "base_configuration"
+    },
+    "description": "A new VB app",
+    "services": {
+    },
+    "eventListeners": {
+        "vbResourceChanged": {
+            "chains": [
+                {
+                    "chainId": "resourceChangedHandler",
+                    "parameters": {
+                        "event": "{{ $event }}"
+                    }
+                }
+            ]
+        }
+    },
+    "security": {
+        "access": {
+            "requiresAuthentication": false
+        }
+    },
+    "applicationModelVersion": "19.4.3",
+    "translations": {
+        "app": {
+            "path": "./resources/strings/app/nls/app-strings"
+        }
+    },
+    "id": "app1",
+    "userConfig": {
+        "configuration": {
+            "oauthUrl": "https://intoraic-vbdemo.integration.ocp.oraclecloud.com:443/ic/builder/rt/heroku_app/1.0/resources/user",
+            "idcsInfo": {
+                "hostName": "https://idcs-3a3787031c68450297dba80e8ba8071f.identity.oraclecloud.com:443",
+                "clientId": "77d8c54e48d84a3790fff221fb262af6",
+                "oAuthRedirectEndpoint": "https://intoraic-vbdemo.integration.ocp.oraclecloud.com:443/ic/builder/rt/heroku_app/1.0/webApps/app1/",
+                "allowedScopes": [
+                    "https://69F87263C9CA4B1D984F6029EEF418F1.integration.ocp.oraclecloud.com:443urn:opc:resource:consumer::all"
+                ]
+            },
+            "url": "https://intoraic-vbdemo.integration.ocp.oraclecloud.com:443/ic/builder/rt/heroku_app/1.0/_currentuser"
+        },
+        "embedding": "deny",
+        "type": "vb/DefaultSecurityProvider"
+    },
+    "events": {
+        "navigateToItem": {
+            "payloadType": {
+                "item": "string"
+            }
+        }
+    }
+}
