@@ -1,5 +1,5 @@
 # vbcs-samples
-visual builder app samples
+visual builder (VBCS) app samples. Checkout all posts on [medium](https://medium.com/tag/visual-builder).
 
 ## heroku-app
 Contains sample visual web app with scripts for deploying it to heroku
